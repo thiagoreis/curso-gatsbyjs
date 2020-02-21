@@ -3,7 +3,7 @@ module.exports = {
     title: `Thiago Reis`,
     description: `A blog about software development`,
     author: `@thiago.reis128`,
-    position: `Dev`
+    position: `Dev`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -26,7 +26,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: ``, // This path is relative to the root of the site.
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
