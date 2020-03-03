@@ -26,7 +26,7 @@ RecommendedPosts.propTypes = {
       slug: propTypes.string.isRequired,
     }),
   }),
-  next: propTypes.shape({
+  previous: propTypes.shape({
     frontmatter: propTypes.shape({
       title: propTypes.string.isRequired,
     }),
