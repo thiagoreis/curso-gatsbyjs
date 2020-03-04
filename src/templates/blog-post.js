@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 
 import * as S from "../components/Post/styled"
 import RecommendedPosts from "../components/RecommendedPosts"
+import Comments from "../components/comments"
 
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
@@ -29,6 +30,7 @@ const BlogPost = ({ data, pageContext }) => {
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </S.MainContent>
       <RecommendedPosts previous={previous} next={next} />
+      <Comments title={post.frontmatter.title} url={post.fields.slug} />
     </Layout>
   )
 }
