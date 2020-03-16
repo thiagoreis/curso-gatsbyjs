@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -63,6 +63,27 @@ img {
     width: 100%;
     height: auto;
 }
+
+body.dark {
+	--borders: #38444d;
+	--postColor: #8899a6;
+	--highlight: #1fa1f2;
+	--mediumBackground: #192734;
+	--background: #16202c;
+	--white: #fff;
+	--black: #222;
+}
+
+body {
+	--borders: #dedede;
+	--postColor: #111;
+	--highlight: #1fa1f2;
+	--mediumBackground: #f0f0f3;
+	--background: #fff;
+	--white: #222;
+	--black: #fff;
+}
+
 `
 
-export default GlobalStyles;
+export default GlobalStyles
