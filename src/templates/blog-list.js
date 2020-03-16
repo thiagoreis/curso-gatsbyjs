@@ -24,15 +24,17 @@ const BlogList = props => {
             fields: { slug },
           },
         }) => (
-          <PostItem
-            slug={slug}
-            background={background}
-            category={category}
-            date={date}
-            timeToRead={timeToRead}
-            title={title}
-            description={description}
-          />
+          <div key={slug}>
+            <PostItem
+              slug={slug}
+              background={background}
+              category={category}
+              date={date}
+              timeToRead={timeToRead.toString()}
+              title={title}
+              description={description}
+            />
+          </div>
         )
       )}
       <Pagination
